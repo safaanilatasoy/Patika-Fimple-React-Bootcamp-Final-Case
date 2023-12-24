@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    padding: 13px;
+    display: flex;
+    justify-content: space-around;
+    background-color: red;
+}
+.navbar ul,li{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.logo{
+    padding: 20px
+}
+.menu {
+    background-color: yellow;
+}
+
+@media (max-width:750px) {
+    
+    .rightContainer{
+    display: none;
+  }
+  .leftContainer{
+    margin: 0;
+  }
+
+  
+}
