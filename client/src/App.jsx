@@ -6,8 +6,8 @@ import {Routes, Route} from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 
-import Home from "./pages/Home";
-import Deneme from "./pages/Deneme";
+import SendApplication from "./pages/Home/SendApplication";
+import ApplicationSuccess from "./pages/Home/ApplicationSuccess";
 
 
 function App() {
@@ -17,8 +17,9 @@ function App() {
 
       <div className="content">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/deneme" element={<Deneme />} />
+          <Route path="/" element={<SendApplication />} />
+          <Route path="/basvuru-basarili" element={<ApplicationSuccess />} />
+          
         </Routes>
       </div>
     </>
