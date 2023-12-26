@@ -9,13 +9,7 @@ function Navbar() {
       </div>
       <div className="rightContainer">
         <ul className="menu">
-          <li>
-            <Link to="/">Başvuru Oluştur</Link>
-          </li>
-
-          <li>
-            <Link to="/basvuru-sorgula">Başvuru Sorgula</Link>
-          </li>
+      
           <li>
             <Link to="/admin">Admin</Link>
           </li>
