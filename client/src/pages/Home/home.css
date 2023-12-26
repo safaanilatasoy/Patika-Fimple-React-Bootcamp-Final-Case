@@ -11,7 +11,10 @@
 }
 .applicationSuccessContainer h3{
     color: #27ae60;
-    border-bottom: 1px solid #27ae60;
+    border-bottom: 1px solid #465c71;
+    width: 70%;
+    text-align: center;
+    padding: 10px;
     margin-top: 20px;
 }
 .applicationSuccessContainer .info {

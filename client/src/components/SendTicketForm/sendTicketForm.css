@@ -22,7 +22,11 @@
 }
 .sendTicketForm h2{
     color: #fff;
+    padding: 10px;
     margin: 10px;
+    border-bottom: 1px solid #465c71;
+    width: 70%;
+    text-align: center;
 }
 .sendTicketForm Form input {
     background-color: #fff;
