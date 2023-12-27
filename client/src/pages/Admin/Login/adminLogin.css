@@ -1,0 +1,91 @@
+
+.container{
+    display: flex;
+    background-color: #fff;
+    color: #000;
+}
+.leftBox{
+    width: 300px;
+    height: 500px;
+    background-image: url("../../../assets/Admin/admin-login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.rightBox{
+}
+
+
+.rightBox{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightBox Form {
+    margin: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.rightBox Form div{
+    position: relative;
+    width: 100%;
+    left: 0px;
+}
+.rightBox h2{
+    color: #34495e;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #465c71;
+    width: 70%;
+    text-align: center;
+}
+.rightBox Form input {
+    background-color: #bdc3c7;
+    width: 100%;
+    margin: 10px;
+    padding: 15px;
+    color: #34495e;
+    border-style: none;
+}
+
+.rightBox button {
+    width:100%;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    background-color: #2ecc71;
+}
+.rightBox button:hover{
+background-color : #27ae60;
+
+}
+
+.errors {
+    display: flex;
+    color: red;
+}
+
+
+@media (max-width: 900px){
+    .container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .leftBox{
+        width: 100%;
+        height: 20%;
+    }
+    .rightBox{
+        width: 100%;
+    }
+}
