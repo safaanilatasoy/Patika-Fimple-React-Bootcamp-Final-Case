@@ -1,12 +1,16 @@
 import { object, string } from "yup";
 
+
+
+// validation error messages
 const errorMessages = {
   stringError: "Lütfen geçerli bir değer giriniz",
   requiredError: "Lütfen bu alanı boş bırakmayınız",
+  emailError: "Lütfen geçerli bir eposta giriniz",
 };
 
 const AdminLoginValidation = object({
-  username: string(errorMessages.stringError).required(errorMessages.requiredError),
+  email: string(errorMessages.stringError).email(errorMessages.emailError).required(errorMessages.requiredError),
   password: string(errorMessages.stringError).required(errorMessages.requiredError), 
 });
 

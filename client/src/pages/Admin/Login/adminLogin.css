@@ -3,6 +3,7 @@
     display: flex;
     background-color: #fff;
     color: #000;
+    border-radius: 10px;
 }
 .leftBox{
     width: 300px;
@@ -10,10 +11,8 @@
     background-image: url("../../../assets/Admin/admin-login.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
 }
-.rightBox{
-}
-
 
 .rightBox{
     width: 400px;
@@ -53,6 +52,7 @@
     padding: 15px;
     color: #34495e;
     border-style: none;
+    border-radius: 10px;
 }
 
 .rightBox button {

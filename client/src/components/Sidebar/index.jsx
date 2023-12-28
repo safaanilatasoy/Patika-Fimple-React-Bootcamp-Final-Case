@@ -1,10 +1,10 @@
 import {Link} from "react-router-dom";
-import "./sidebar.css";
+import style from "./style.module.css";
 function Sidebar() {
   return (
     <div>
-        <div className="sidebarContainer">
-          <ul className="sidebarMenu">
+        <div className={style.sidebarContainer}>
+          <ul className={style.sidebarMenu}>
             <li>
               <Link to="/">Başvuru Oluştur</Link>
             </li>

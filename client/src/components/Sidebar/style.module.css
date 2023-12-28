@@ -8,11 +8,11 @@ a {
     flex-direction: column;
     position: relative;
     width: 20%;
-    height: 500px;
     background-color:#2c3e50;
     float: left;
     margin:10px;
     border-radius: 10px;
+    font-size: 0.9em;
 }
 .sidebarContainer ul,li{
     display: flex;
@@ -21,7 +21,7 @@ a {
     margin: 0;
 }
 
-.sidebarContainer li{
+.sidebarContainer li:first-child{
     border-bottom: 1px solid #465c71;
 }
 .sidebarContainer li:hover{

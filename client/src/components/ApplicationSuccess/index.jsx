@@ -1,14 +1,15 @@
-import './home.css'
+import style from './style.module.css';
+
 function ApplicationSuccess() {
   return (
-    <div className="applicationSuccessContainer">
+    <div className={style.applicationSuccessContainer}>
       <h3>Başvuru Başarılı</h3>
-      <div className="info">
+      <div className={style.info}>
         <span>
           <strong>Başvuru kodunuz:</strong>
           <i> a3424sdf3rr24 </i>
         </span>
-        <span className="desc">Başvuru kodunuzu kullanarak başvurunuzun durumunu sorgulayabilirsiniz.</span>
+        <span className={style.info}>Başvuru kodunuzu kullanarak başvurunuzun durumunu sorgulayabilirsiniz.</span>
       </div>
     </div>
   );

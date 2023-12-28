@@ -1,15 +1,14 @@
 import {Link} from 'react-router-dom';
-import './Navbar.css';
+import style from './style.module.css';
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="leftContainer">
-        <div className="logo">Logo</div>
+    <nav className={style.navbar}>
+      <div className={style.leftContainer}>
+        <div className={style.logo}>Logo</div>
       </div>
-      <div className="rightContainer">
-        <ul className="menu">
-      
+      <div className={style.rightContainer}>
+        <ul className={style.menu}>
           <li>
             <Link to="/admin">Admin</Link>
           </li>
