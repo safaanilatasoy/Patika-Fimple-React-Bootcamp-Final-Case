@@ -14,8 +14,8 @@ const errorMessages =
 const SendApplicationValidation = object({
   firstName: string(errorMessages.stringError).required(errorMessages.requiredError),
   lastName: string(errorMessages.stringError).required(errorMessages.requiredError),
-  age: number(errorMessages.numberError).required(errorMessages.requiredError).positive(errorMessages.positiveError).integer(),
-  tc: number(errorMessages.numberError).required(errorMessages.requiredError).positive(errorMessages.positiveError).integer(),
+  age: number(errorMessages.numberError).positive(errorMessages.positiveError).integer().required(errorMessages.requiredError),
+  tc: number(errorMessages.numberError).positive(errorMessages.positiveError).integer().required(errorMessages.requiredError),
   applicationReason: string(errorMessages.stringError).required(errorMessages.requiredError),
   address: string(errorMessages.stringError).required(errorMessages.requiredError),
 });
