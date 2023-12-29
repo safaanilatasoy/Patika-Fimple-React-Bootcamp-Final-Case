@@ -1,10 +1,11 @@
 
-function AdminDasboard() {
+function AdminDashboard() {
+
   return (
     <div>
       This is Admin Dashboard
     </div>
-  )
+  );
 }
 
-export default AdminDasboard
+export default AdminDashboard

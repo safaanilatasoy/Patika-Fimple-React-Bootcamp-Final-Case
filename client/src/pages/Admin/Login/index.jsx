@@ -1,18 +1,18 @@
 import "./adminLogin.css";
 
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import {auth} from '../../../firebase';
-
+import { useEffect } from "react";
 
 
 // Form validation processes for admin panel 
 import AdminLoginValidation from "../../../components/Validations/AdminLoginValidation";
 
-
 function Login() {
   const navigate = useNavigate();
+
   return (
     // Main Container
     <div className="container">
@@ -35,7 +35,7 @@ function Login() {
 
             signInWithEmailAndPassword(auth, values.email, values.password)
               .then(() => {
-                console.log(`email: ${values.email} pass: ${values.password}`);
+                window.sessionStorage.setItem("isAuthenticated", true);
                 navigate("/admin-dashboard");
               })
               .catch((e) => {

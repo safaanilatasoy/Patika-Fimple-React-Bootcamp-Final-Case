@@ -2,6 +2,8 @@ import {Link} from 'react-router-dom';
 import style from './style.module.css';
 
 function Navbar() {
+
+
   return (
     <nav className={style.navbar}>
       <div className={style.leftContainer}>
@@ -10,9 +12,10 @@ function Navbar() {
       <div className={style.rightContainer}>
         <ul className={style.menu}>
           <li>
-            <Link to="/admin">Admin</Link>
+            <Link to="/admin-login">Admin</Link>
           </li>
         </ul>
+
       </div>
     </nav>
   );
