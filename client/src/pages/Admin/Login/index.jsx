@@ -45,7 +45,7 @@ function Login() {
           <Form>
             <Field type="email" id="email" name="email" placeholder="Eposta" />
             <ErrorMessage component="div" className="errors" name="email" />
-            <Field id="password" name="password" placeholder="Şifre" />
+            <Field type="password" id="password" name="password" placeholder="Şifre" />
             <ErrorMessage component="div" className="errors" name="password" />
             <button type="submit">Giriş yap</button>
           </Form>
