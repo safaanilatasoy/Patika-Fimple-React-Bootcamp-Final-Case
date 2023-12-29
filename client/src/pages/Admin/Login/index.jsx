@@ -4,7 +4,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useNavigate} from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import {auth} from '../../../firebase';
-import { useEffect } from "react";
 
 
 // Form validation processes for admin panel 
