@@ -4,11 +4,11 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 
-import SendApplication from "./pages/Home/SendApplication";
+import SendApplication from "./pages/Public/SendApplication";
 import ApplicationSuccess from "./components/ApplicationSuccess";
 import Sidebar from "./components/Sidebar";
 import Login from "./pages/Admin/Login";
-import SearchApplication from "./pages/Home/SearchApplication";
+import SearchApplication from "./pages/Public/SearchApplication";
 import AdminDashboard from "./pages/Admin/Dashboard/AdminDashboard";
 
 
