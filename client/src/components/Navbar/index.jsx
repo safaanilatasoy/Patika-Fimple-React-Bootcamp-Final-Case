@@ -7,7 +7,9 @@ function Navbar() {
   return (
     <nav className={style.navbar}>
       <div className={style.leftContainer}>
-        <div className={style.logo}>Logo</div>
+        <div className={style.logo}>
+          <Link to="/">Logo</Link>
+        </div>
       </div>
       <div className={style.rightContainer}>
         <ul className={style.menu}>
@@ -15,7 +17,6 @@ function Navbar() {
             <Link to="/admin-login">Admin</Link>
           </li>
         </ul>
-
       </div>
     </nav>
   );

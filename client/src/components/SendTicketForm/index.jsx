@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import {useNavigate} from "react-router-dom";
 
 // validation processes for application form
-import SendApplicationValidation from "../Validations/SendApplicationValidation";
+import SendApplicationValidation from "../../Validations/SendApplicationValidation";
 
 
 function SendTicketForm() {
