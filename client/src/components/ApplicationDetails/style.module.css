@@ -82,6 +82,9 @@
     background-color: #27ae60;
 
 }
+.errors{
+    color:red;
+}
 
 
 @media(max-width:750px) {

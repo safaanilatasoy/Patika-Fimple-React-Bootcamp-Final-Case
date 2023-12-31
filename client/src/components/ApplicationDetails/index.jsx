@@ -1,9 +1,10 @@
 
 import style from "./style.module.css";
 import { useParams } from "react-router-dom";
+import AdminAnswerValidation from "../../Validations/AdminAnswerValidation";
 
 import { useDocumentData } from "react-firebase-hooks/firestore";
-import { collection, addDoc, setDoc, doc } from "firebase/firestore";
+import {  setDoc, doc } from "firebase/firestore";
 import { firestoreDB } from "../../firebase";
 
 import { Formik, Form, Field } from "formik";
@@ -85,14 +86,20 @@ const handleSubmit = async (values) => {
           initialValues={{
             adminAnswer: "",
             isAnswered: true,
-  
           }}
+          validationSchema={AdminAnswerValidation}
           onSubmit={handleSubmit}
         >
           <Form>
-            <Field id="adminAnswer" name="adminAnswer" placeholder="Cevabınız" />
+            <Field
+              id="adminAnswer"
+              name="adminAnswer"
+              placeholder="Cevabınız"
+            />
+           
             <button type="submit">Gönder</button>
-          </Form>
+          </Form> 
+         
         </Formik>
       </div>
     </div>
