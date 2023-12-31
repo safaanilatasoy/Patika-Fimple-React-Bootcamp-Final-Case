@@ -20,7 +20,7 @@ function App() {
   
   const isLoggedIn = () => {
     const isLogged = window.sessionStorage.getItem("isAuthenticated");
-    return isLogged == "true"
+    return isLogged == "true";
   }
   return (
     <>
@@ -33,12 +33,14 @@ function App() {
           <Route path="/" element={<PrivateRoute isAuthenticated={isLoggedIn} />}>
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
           </Route>
-          <Route path="/" element={<NotAuth isAuthenticated={isLoggedIn} />}>
+
+          {/* Admin Layouth */}
+          <Route element={<NotAuth isAuthenticated={isLoggedIn} />}>
             <Route path="/admin-login" element={<Login />} />
           </Route>
               
           <Route path="/basvuru-sorgula" element={<SearchApplication />} />
-          <Route path="/basvuru-basarili" element={<ApplicationSuccess />} />
+          <Route path="/basvuru-basarili/:id" element={<ApplicationSuccess />} />
         
         </Routes>
       </div>

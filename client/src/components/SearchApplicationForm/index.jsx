@@ -9,8 +9,9 @@ function SearchApplicationForm({ onFormSubmit }) {
         initialValues={{
           applicationID: "",
         }}
-        onSubmit={(values) => {
+        onSubmit={(values, { resetForm }) => {
           onFormSubmit(values.applicationID);
+          resetForm(); 
         }}
       >
         <Form className={style.applicationSearchForm}>

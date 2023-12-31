@@ -3,6 +3,7 @@ import { useDocumentData } from 'react-firebase-hooks/firestore';
 import { doc } from "firebase/firestore";
 import { firestoreDB } from "../../firebase";
 
+// eslint-disable-next-line react/prop-types
 function ApplicationDetails({applicationId}) {
   const docRef = doc(firestoreDB, "applications", applicationId);
   const [data, isLoading] = useDocumentData(docRef);

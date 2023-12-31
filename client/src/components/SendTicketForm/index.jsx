@@ -1,6 +1,8 @@
 import style from './style.module.css';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import {useNavigate} from "react-router-dom";
+import { firestoreDB } from "../../firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 // validation processes for application form
 import SendApplicationValidation from "../../Validations/SendApplicationValidation";
@@ -8,6 +10,17 @@ import SendApplicationValidation from "../../Validations/SendApplicationValidati
 
 function SendTicketForm() {
   const navigate = useNavigate();
+
+ const handleSubmit = async (values) => {
+  try {
+    const docRef = await addDoc(collection(firestoreDB, 'applications'), values);
+    console.log("Document written with ID: ", docRef.id);
+     navigate(`/basvuru-basarili/${docRef.id}`, { state: { applicationId: docRef.id } })
+  } catch (error) {
+    console.error("Error adding document: ", error);
+  }
+};
+
   return (
     <div className={style.sendTicketForm}>
       <h2>Başvuru Oluştur</h2>
@@ -21,10 +34,7 @@ function SendTicketForm() {
           address: "",
         }}
         validationSchema={SendApplicationValidation}
-        onSubmit={(values) => {
-          console.log(values);
-          navigate("/basvuru-basarili");
-        }}
+        onSubmit={handleSubmit}
       >
         <Form>
           <Field id="firstName" name="firstName" placeholder="İsim" />

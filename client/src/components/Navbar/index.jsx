@@ -1,9 +1,7 @@
-import {Link} from 'react-router-dom';
-import style from './style.module.css';
+import { Link } from "react-router-dom";
+import style from "./style.module.css";
 
 function Navbar() {
-
-
   return (
     <nav className={style.navbar}>
       <div className={style.leftContainer}>
@@ -22,4 +20,4 @@ function Navbar() {
   );
 }
 
-export default Navbar
+export default Navbar;

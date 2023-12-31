@@ -24,13 +24,11 @@
 .senderInfos{
     display: flex;
     flex-direction: column;
-    color:red;
 }
 
 .applicationStatusHeader{
     display: flex;
     flex-direction: column;
-    color: blue;
 }
 
 .applicationContentHeader{
