@@ -15,6 +15,7 @@ import AdminDashboard from "./pages/Admin/Dashboard/AdminDashboard";
 import PrivateRoute from "./Routes/PrivateRoute";
 import NotAuth from "./Routes/NotAuth";
 import Sidebar from './components/Sidebar/index';
+import ApplicationDetails from './components/ApplicationDetails';
 
 function App() {
   
@@ -35,6 +36,7 @@ function App() {
             element={<PrivateRoute isAuthenticated={isLoggedIn} />}
           >
             <Route path="/admin-dashboard" element={<AdminDashboard />} />
+            <Route path="/application-details/:id" element={<ApplicationDetails />} />
           </Route>
 
           {/* Admin Layouth */}

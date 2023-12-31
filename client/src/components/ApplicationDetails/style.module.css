@@ -1,0 +1,96 @@
+.applicationList {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #34495e;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+.applicationDetails {
+    background-color: #fff;
+    color: #34495e;
+    padding: 10px;
+    border-radius: 10px;
+    width: 98%;
+}
+.applicationDetailsHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.senderInfos {
+    display: flex;
+    flex-direction: column;
+}
+
+.applicationStatusHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+.applicationContentHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 1px dotted #000;
+    padding: 10px;
+}
+.adminAnswer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 1px dotted #34495e;
+    padding: 10px;
+}
+
+.answerApplication{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    
+}
+.answerApplication form {
+    display: flex;
+    flex:1;
+    justify-content: center;
+}
+.answerApplication form input{
+    display: flex;
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px 0 0 10px;
+    border-style: none;
+    background-color: #fff;
+  color: #34495e; 
+    
+}
+.answerApplication form button {
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    border-style: none;
+    background-color: #2ecc71;
+    cursor: pointer;
+}
+.answerApplication button:hover {
+
+    background-color: #27ae60;
+
+}
+
+
+@media(max-width:750px) {
+
+.applicationList {
+   
+    width: 100%;
+
+}
+
+}
+

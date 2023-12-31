@@ -4,9 +4,10 @@ import { doc } from "firebase/firestore";
 import { firestoreDB } from "../../firebase";
 
 // eslint-disable-next-line react/prop-types
-function ApplicationDetails({applicationId}) {
+function ApplicationList({applicationId}) {
   const docRef = doc(firestoreDB, "applications", applicationId);
   const [data, isLoading] = useDocumentData(docRef);
+
 
   if (isLoading) {
     return <h3>Yükleniyor...</h3>
@@ -23,25 +24,36 @@ function ApplicationDetails({applicationId}) {
       <div className={style.applicationDetails} id={data.id}>
         <div className={style.applicationDetailsHeader}>
           <div className={style.senderInfos}>
-            <span className={style.senderName}>{`${data.name} ${data.surname}`}</span>
-            <span className={style.senderTc}>{data.tc}</span>
-            <span className={style.senderAge}>Yaş: {data.age}</span>
+            <span className={style.senderName}>
+              <b>İsim/Soyisim: </b>
+              {`${data.name} ${data.surname}`}
+            </span>
+            <span className={style.senderTc}>
+              <b>TC:</b>{" "}
+              {data.tc}
+            </span>
+            <span className={style.senderAge}>
+              <b>Yaş: </b> {data.age}
+            </span>
           </div>
 
           <div className={style.applicationStatusHeader}>
             <span className={style.applicationStatus}>
-              Status: {data.isAnswered === true ? "Cevaplandı" : "Cevap Bekliyor"}
+              <b>Status: </b>
+              {data.isAnswered === true ? "Cevaplandı" : "Cevap Bekliyor"}
             </span>
           </div>
         </div>
 
         <div className={style.applicationContentHeader}>
-          <div className={style.applicationContent}>{data.applicationReason}</div>
+          <div className={style.applicationContent}>
+            {data.applicationReason}
+          </div>
         </div>
 
         {data.isAnswered === true ? (
           <div className={style.adminAnswer}>
-            Başvuru cevabı: {data.adminAnswer}
+            <b>Başvuru cevabı:</b> {data.adminAnswer}
           </div>
         ) : (
           ""
@@ -51,4 +63,4 @@ function ApplicationDetails({applicationId}) {
   );
 }
 
-export default ApplicationDetails;
+export default ApplicationList;
