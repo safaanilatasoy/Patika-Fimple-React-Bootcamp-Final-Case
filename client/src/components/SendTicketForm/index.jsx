@@ -26,8 +26,8 @@ function SendTicketForm() {
       <h2>Başvuru Oluştur</h2>
       <Formik
         initialValues={{
-          firstName: "",
-          lastName: "",
+          name: "",
+          surname: "",
           age: "",
           tc: "",
           applicationReason: "",
@@ -37,10 +37,10 @@ function SendTicketForm() {
         onSubmit={handleSubmit}
       >
         <Form>
-          <Field id="firstName" name="firstName" placeholder="İsim" />
-          <ErrorMessage component="div" className={style.errors} name="firstName" />
-          <Field id="lastName" name="lastName" placeholder="Soyisim" />
-          <ErrorMessage component="div" className={style.errors} name="lastName" />
+          <Field id="name" name="name" placeholder="İsim" />
+          <ErrorMessage component="div" className={style.errors} name="name" />
+          <Field id="surname" name="surname" placeholder="Soyisim" />
+          <ErrorMessage component="div" className={style.errors} name="surname" />
           <Field id="age" name="age" placeholder="Yaş" type="number" />
           <ErrorMessage component="div" className={style.errors} name="age" />
           <Field id="tc" name="tc" placeholder="TC No" type="number" />
