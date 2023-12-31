@@ -1,6 +1,8 @@
 import style from './style.module.css';
 import { useLocation } from "react-router-dom";
 
+
+
 function ApplicationSuccess() {
 
   const location = useLocation();

@@ -15,7 +15,7 @@ function SearchApplicationForm({ onFormSubmit }) {
         }}
       >
         <Form className={style.applicationSearchForm}>
-          <Field id="applicationID" name="applicationID" placeholder="Lütfen başvuru kodunuzu giriniz" />
+          <Field id="applicationID" name="applicationID" placeholder="Lütfen başvuru kodunu giriniz" />
           <ErrorMessage component="div" className={style.errors} name="applicationID"/>
 
           <button type="submit">Gönder</button>

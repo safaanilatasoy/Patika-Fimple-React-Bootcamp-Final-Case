@@ -1,0 +1,35 @@
+.applicationTable {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+    color: #000;
+}
+
+.applicationTable td,
+.applicationTable th {
+    border: none;
+    padding: 8px;
+}
+.applicationTable th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.applicationTable th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+
+.applicationTable tr:nth-child(even) {
+    background-color: #d3d2d2;
+}
+
+
+.applicationTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3a5168;
+    color: white;
+}
+.h1a{
+    color: red;
+}

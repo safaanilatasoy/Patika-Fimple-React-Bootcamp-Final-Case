@@ -1,0 +1,32 @@
+.mainContainer{
+display: flex;
+flex: 1;
+    
+}
+.dashboard{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+}
+
+
+
+
+
+
+
+@media(max-width:750px) {
+    .mainContainer {
+       flex-direction: column;
+    }
+    .dashboard{
+        width: 100%;
+    }
+
+
+}
+
