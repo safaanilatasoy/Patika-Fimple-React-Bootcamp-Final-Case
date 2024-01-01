@@ -13,7 +13,7 @@ function ApplicationSuccess() {
       <h3>{location.state ? "Başvuru Başarılı" : <div className={style.errors}>Böyle bir başvuru yok</div>}</h3>
 
       <div className={style.info}>
-        <span>
+        <span className={style.applicationCode}>
           <strong>Başvuru kodunuz:</strong>
           <i> {applicationId} </i>
         </span>

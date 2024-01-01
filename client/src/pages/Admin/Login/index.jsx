@@ -48,6 +48,7 @@ function Login() {
             <Field type="password" id="password" name="password" placeholder="Şifre"/>
             <ErrorMessage component="div" className="errors" name="password" />
             <button type="submit">Giriş yap</button>
+      <span>U: kodluyoruz@email.com P: bootcamp109</span>
           </Form>
         </Formik>
       </div>

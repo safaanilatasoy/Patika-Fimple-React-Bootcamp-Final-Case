@@ -34,6 +34,7 @@ function Applications() {
     }
   };
 
+  
   return (
     <>
       <table className={style.applicationTable}>

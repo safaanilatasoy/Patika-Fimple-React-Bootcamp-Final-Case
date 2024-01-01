@@ -18,10 +18,15 @@
     margin-top: 20px;
 }
 .applicationSuccessContainer .info {
-    padding: 20px;
+    padding: 10px;
     margin: 15px;
     display: flex;
     flex-direction: column;
+}
+.applicationCode {
+    padding: 20px;
+    margin: 15px;
+    border: 1px dotted #465c71;
 }
 .applicationSuccessContainer .info i{
     background-color: #2c3e50;

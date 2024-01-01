@@ -14,7 +14,7 @@ function ApplicationList({applicationId}) {
   }
 
   if (!data) {
-    return <h4>Böyle bir başvuru bulunamadı, lütfen başvuru numaranızı kontrol ediniz.</h4>
+    return <h4 className={style.notFoundText}>Böyle bir başvuru bulunamadı, lütfen başvuru numaranızı kontrol ediniz.</h4>
   }
 
   console.log(data);
