@@ -55,7 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Proje Hakkında
 
-<img src="images/masaustu-ss.png"  width="400"/><img src="images/basvuru_olustur_mobil_ss.png"  width="150"/>
+<img src="images/masaustu-ss.png"  width="600"/> <img src="images/basvuru_olustur_mobil_ss.png"  width="150"/>
 
 
 Uygulamamız, herkese açık bir başvuru formuyla başlıyor. Kullanıcılar, bu formu doldurduktan sonra başvurularını takip edebilmek için benzersiz bir kod alırlar. Bu kod, kullanıcılara başvurularının durumunu kontrol etme imkanı tanır. Kullanıcılar, başvuru durumu sayfasından bu kod ile başvurularını çözülüp çözülmediğini kolayca kontrol edebilirler.
@@ -183,14 +183,11 @@ Projeye yıldız vermeyi unutmayın! Tekrar teşekkürler!
 
 ### Masaüstü Ekran Görüntüleri
 
-<img src="images/masaustu/basvuru_olustur_masaüstü_ss.png" width="800">
-<img src="images/masaustu/search-app-masaustu.png" width="800">
-<img src="images/masaustu/search-masaustu-2.png" width="800">
-<img src="images/masaustu/login-masaustu.png" width="800">
-<img src="images/masaustu/admin-panel.png" width="800">
-<img src="images/masaustu/app-details.png" width="800">
-<img src="images/masaustu/app-details-2.png" width="800">
-<img src="images/masaustu/app-details-3.png" width="800">
+<img src="images/masaustu/basvuru_olustur_masaüstü_ss.png" width="400"><img src="images/masaustu/search-app-masaustu.png" width="400">
+<img src="images/masaustu/search-masaustu-2.png" width="400"><img src="images/masaustu/login-masaustu.png" width="400">
+<img src="images/masaustu/admin-panel.png" width="400"><img src="images/masaustu/app-details.png" width="400">
+<img src="images/masaustu/app-details-2.png" width="400"><img src="images/masaustu/app-details-3.png" width="400">
+
 
 
 ### Mobil Ekran Görüntüleri
