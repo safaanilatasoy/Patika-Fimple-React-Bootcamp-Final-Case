@@ -183,10 +183,10 @@ Projeye yıldız vermeyi unutmayın! Tekrar teşekkürler!
 
 ### Masaüstü Ekran Görüntüleri
 
-<img src="images/masaustu/basvuru_olustur_masaüstü_ss.png" width="600">   <img src="images/masaustu/search-app-masaustu.png" width="600">
-<img src="images/masaustu/search-masaustu-2.png" width="600">   <img src="images/masaustu/login-masaustu.png" width="600">
-<img src="images/masaustu/admin-panel.png" width="600">   <img src="images/masaustu/app-details.png" width="600">
-<img src="images/masaustu/app-details-2.png" width="600">   <img src="images/masaustu/app-details-3.png" width="600">
+<img src="images/masaustu/basvuru_olustur_masaüstü_ss.png" width="450">   <img src="images/masaustu/search-app-masaustu.png" width="450">
+<img src="images/masaustu/search-masaustu-2.png" width="450">   <img src="images/masaustu/login-masaustu.png" width="450">
+<img src="images/masaustu/admin-panel.png" width="450">   <img src="images/masaustu/app-details.png" width="450">
+<img src="images/masaustu/app-details-2.png" width="450">   <img src="images/masaustu/app-details-3.png" width="450">
 
 
 
