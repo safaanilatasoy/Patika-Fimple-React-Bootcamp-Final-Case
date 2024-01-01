@@ -183,21 +183,19 @@ Projeye yıldız vermeyi unutmayın! Tekrar teşekkürler!
 
 ### Masaüstü Ekran Görüntüleri
 
-<img src="images/masaustu/basvuru_olustur_masaüstü_ss.png" width="400"><img src="images/masaustu/search-app-masaustu.png" width="400">
-<img src="images/masaustu/search-masaustu-2.png" width="400"><img src="images/masaustu/login-masaustu.png" width="400">
-<img src="images/masaustu/admin-panel.png" width="400"><img src="images/masaustu/app-details.png" width="400">
-<img src="images/masaustu/app-details-2.png" width="400"><img src="images/masaustu/app-details-3.png" width="400">
+<img src="images/masaustu/basvuru_olustur_masaüstü_ss.png" width="600">   <img src="images/masaustu/search-app-masaustu.png" width="600">
+<img src="images/masaustu/search-masaustu-2.png" width="600">   <img src="images/masaustu/login-masaustu.png" width="600">
+<img src="images/masaustu/admin-panel.png" width="600">   <img src="images/masaustu/app-details.png" width="600">
+<img src="images/masaustu/app-details-2.png" width="600">   <img src="images/masaustu/app-details-3.png" width="600">
 
 
 
 ### Mobil Ekran Görüntüleri
 
-<img src="images/mobil/mobil-basvuru-olustur.png" width="300">
-<img src="images/mobil/mobil-search.png" width="300">
-<img src="images/mobil/mobil-login.png" width="300">
-<img src="images/mobil/mobil-admin.png" width="300">
-<img src="images/mobil/mobil-details.png" width="300">
-<img src="images/mobil/mobil-details-2.png" width="300">
+<img src="images/mobil/mobil-basvuru-olustur.png" width="150">  <img src="images/mobil/mobil-search.png" width="150">  <img src="images/mobil/mobil-login.png" width="150">
+<img src="images/mobil/mobil-admin.png" width="150">  <img src="images/mobil/mobil-details.png" width="150">  <img src="images/mobil/mobil-details-2.png" width="150">
+
+
 
 
 <!-- CONTACT -->
