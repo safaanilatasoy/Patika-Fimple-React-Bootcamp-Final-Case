@@ -19,7 +19,7 @@
      Safa Anıl Atasoy Patika and Fimple React Bootcamp Final Case
     <br />
     <br />
-    <a href="#">Live Demo</a>
+    <a href="https://main--charming-hotteok-60f1af.netlify.app">Live Demo</a>
   </p>
 </div>
 
