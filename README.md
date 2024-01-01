@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="#">
-    <img src="images/patikaLogo.png" alt="Logo">
+    <img src="images/PatikaLogo.png" alt="Logo">
   </a>
 
   <h3 align="center">Patika and Fimple React Bootcamp Final Case</h3>
