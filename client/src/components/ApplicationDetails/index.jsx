@@ -1,6 +1,6 @@
 
 import style from "./style.module.css";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import AdminAnswerValidation from "../../Validations/AdminAnswerValidation";
 
 import { useDocumentData } from "react-firebase-hooks/firestore";
@@ -11,6 +11,7 @@ import { Formik, Form, Field } from "formik";
 
 // eslint-disable-next-line react/prop-types
 function ApplicationDetails() {
+    const navigate = useNavigate();
     const { id } = useParams();
     const docRef = doc(firestoreDB, "applications", id);
     const [data, isLoading] = useDocumentData(docRef);
@@ -41,12 +42,16 @@ const handleSubmit = async (values) => {
     }
   };
 
+  const goAppList = () => {
+    navigate("/admin-dashboard");
+  }
 
   return (
     <div className={style.applicationList}>
       <div className={style.applicationDetails} id={data.id}>
         <div className={style.applicationDetailsHeader}>
           <div className={style.senderInfos}>
+              <button onClick={goAppList} className={style.goBackButton}><i className="uil uil-arrow-left" /><span>Geri</span></button>
             <span className={style.senderName}>
               <b>
                 <i className="uil uil-user" />{" "}

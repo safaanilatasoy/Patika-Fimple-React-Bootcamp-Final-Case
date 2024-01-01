@@ -25,9 +25,26 @@
     background-color: #2ecc71;
     cursor: pointer;
     border-radius: 10px;
+    margin: 5px;
+    align-items: center;
+}
+.menu li button{
+    text-align: center;
+    align-items: center;
+    flex:1;
 }
 .menu li:hover{
     background-color: #27ae60;
+}
+.logout{
+    background-color: #c0392b !important;
+}
+.logoutButton{
+    background-color: transparent;
+    flex: 1;
+    border-style: none;
+    width: 100%;
+    cursor: pointer;
 }
 
 @media (max-width:750px) {

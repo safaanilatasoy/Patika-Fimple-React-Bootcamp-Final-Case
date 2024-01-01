@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar isAuthenticated={isLoggedIn}/>
       <Sidebar />
       <div className="content">
         <Routes>
