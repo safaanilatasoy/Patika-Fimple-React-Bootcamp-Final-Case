@@ -1,9 +1,8 @@
 # Patika-Fimple-React-Bootcamp-Final-Case
+
  Safa Anıl Atasoy Patika and Fimple React Bootcamp Final Case
 
-
 <a name="readme-top"></a>
-
 
 <!-- PROJECT SHIELDS -->
 
@@ -55,7 +54,6 @@
 
 <img src="images/masaustu-ss.png"  width="600"/> <img src="images/basvuru_olustur_mobil_ss.png"  width="150"/>
 
-
 Uygulamamız, herkese açık bir başvuru formuyla başlıyor. Kullanıcılar, bu formu doldurduktan sonra başvurularını takip edebilmek için benzersiz bir kod alırlar. Bu kod, kullanıcılara başvurularının durumunu kontrol etme imkanı tanır. Kullanıcılar, başvuru durumu sayfasından bu kod ile başvurularını çözülüp çözülmediğini kolayca kontrol edebilirler.
 
 ### Uygulama Senaryosu
@@ -72,7 +70,6 @@ Bazı özellikler:
 * Yöneticiler başvuruları silebilir, cevap yazabilir, cevaplanmış eski başvuruları ve başvuru yapılma tarihini görebilir.
 
 Aşşağıda özellikler daha detaylı şekilde açıklanmıştır.
-
 
 ### Geliştirme Araçları
 
@@ -94,7 +91,6 @@ Uygulamayı kendi hesabınıza klonlamak için
   
 ### Kurulum
 
-
 1. Firebase kurulumu için [https://firebase.com](https://firebase.com)
 2. Repository klonlamak için
 
@@ -110,7 +106,7 @@ Uygulamayı kendi hesabınıza klonlamak için
 
 4. Proje için gerekli paketleri yüklemek için
 
-  * yarn
+* yarn
 
   ```sh
   yarn
@@ -136,12 +132,10 @@ Uygulamayı kendi hesabınıza klonlamak için
 
 ```
 
-
 <p align="right">(<a href="#readme-top">yukarıya dön</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 ## Kullanım
-
 
 <p align="right">(<a href="#readme-top">yukarıya dön</a>)</p>
 
@@ -154,7 +148,6 @@ Uygulamayı kendi hesabınıza klonlamak için
 * [x] Yöneticiler admin paneli giriş sayfası üzerinden giriş yapabilir.
 * [x] Yöneticiler başvuru listesine erişebilir ve istedikleri başvurunun detay sayfasına erişebilir.
 * [x] Yöneticiler başvuruları silebilir, cevap yazabilir, cevaplanmış eski başvuruları ve başvuru yapılma tarihini görebilir.
-
 
 <p align="right">(<a href="#readme-top">yukarıya dön</a>)</p>
 
@@ -174,8 +167,6 @@ Projeye yıldız vermeyi unutmayın! Tekrar teşekkürler!
 
 <p align="right">(<a href="#readme-top">yukarıya dön</a>)</p>
 
-
-
 <!-- PROJECT SCREENSHOTS -->
 ## Ekran Görüntüleri
 
@@ -186,15 +177,10 @@ Projeye yıldız vermeyi unutmayın! Tekrar teşekkürler!
 <img src="images/masaustu/admin-panel.png" width="450">   <img src="images/masaustu/app-details.png" width="450">
 <img src="images/masaustu/app-details-2.png" width="450">   <img src="images/masaustu/app-details-3.png" width="450">
 
-
-
 ### Mobil Ekran Görüntüleri
 
 <img src="images/mobil/mobil-basvuru-olustur.png" width="150">  <img src="images/mobil/mobil-search.png" width="150">  <img src="images/mobil/mobil-login.png" width="150">
 <img src="images/mobil/mobil-admin.png" width="150">  <img src="images/mobil/mobil-details.png" width="150">  <img src="images/mobil/mobil-details-2.png" width="150">
-
-
-
 
 <!-- CONTACT -->
 ## İletişim
@@ -210,22 +196,14 @@ Projec Linki: [Github](https://github.com/safaanilatasoy/Patika-Fimple-React-Boo
 
 Öncelikle bootcamp süresince bana destek olan ve projemi incelemek için zaman harcayan herkese teşekkür ederim.
 
-
-
 <p align="right">(<a href="#readme-top">yukarıya dön</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[linkedin-url]: https://www.linkedin.com/in/safaanilatasoy/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Formik]: https://img.shields.io/badge/Formik-blue
 [Formik-url]: https://formik.org/
 [Yup]: https://img.shields.io/badge/Yup-red
 [Yup-url]: https://www.npmjs.com/package/yup
-[ReactRouterDom]: https://img.shields.io/badge/ReactRouterDom-green
-[ReactRouterDom-url]: https://reactrouter.com/en/main
 [Firebase]: https://img.shields.io/badge/Firebase-yellow
-[Firebase]: https://firebase.google.com/
-
-
