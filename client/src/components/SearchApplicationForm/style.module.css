@@ -23,11 +23,16 @@
    border-style: none;
 }
 .applicationSearchForm button {
+    width: 10%;
     padding: 15px;
     border-radius: 0 10px 10px 0;
     border-style: none;
     background-color: #2ecc71;
     cursor: pointer;
+}
+.applicationSearchForm button i{
+    margin: 5px;
+    font-size: 16px;
 }
 .applicationSearchForm button:hover{
    

@@ -40,10 +40,22 @@ function Applications() {
       <table className={style.applicationTable}>
         <thead>
           <tr>
-            <th>Başvuru yapan</th>
-            <th>Tarih</th>
-            <th>Durum</th>
-            <th>İşlem</th>
+            <th>
+              <i className="uil uil-user" />
+              Başvuru yapan
+            </th>
+            <th>
+              <i className="uil uil-calendar-alt" />
+              Tarih
+            </th>
+            <th>
+              <i className="uil uil-rocket" />
+              Durum
+            </th>
+            <th>
+              <i className="uil uil-process" />
+              İşlem
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -60,7 +72,7 @@ function Applications() {
                 {application.isAnswered === true ? (
                   <span className="answered">Cevaplandı</span>
                 ) : (
-                  <span className="waitingAnswer">Cevap bekliyor</span>
+                  <span className="waitingAnswer"> Cevap bekliyor</span>
                 )}
               </td>
               <td className={style.buttonContainer}>

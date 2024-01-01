@@ -18,7 +18,7 @@ function SearchApplicationForm({ onFormSubmit }) {
           <Field id="applicationID" name="applicationID" placeholder="Lütfen başvuru kodunu giriniz" />
           <ErrorMessage component="div" className={style.errors} name="applicationID"/>
 
-          <button type="submit">Gönder</button>
+          <button type="submit"><i className="uil uil-search" />Ara</button>
         </Form>
       </Formik>
     </div>

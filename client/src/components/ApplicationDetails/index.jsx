@@ -48,21 +48,34 @@ const handleSubmit = async (values) => {
         <div className={style.applicationDetailsHeader}>
           <div className={style.senderInfos}>
             <span className={style.senderName}>
-              <b>İsim/Soyisim: </b>
+              <b>
+                <i className="uil uil-user" />{" "}
+              </b>
               {`${data.name} ${data.surname}`}
             </span>
             <span className={style.senderTc}>
-              <b>TC:</b> {data.tc}
+              <b>
+                {" "}
+                <i className="uil uil-postcard" />
+              </b>{" "}
+              {data.tc}
             </span>
             <span className={style.senderAge}>
-              <b>Yaş: </b> {data.age}
+              <b>
+                <i className="uil uil-user-plus" />{" "}
+              </b>{" "}
+              {data.age}
             </span>
           </div>
 
           <div className={style.applicationStatusHeader}>
             <span className={style.applicationStatus}>
               <b>Status: </b>
-              {data.isAnswered === true ? <span className="answered">Cevaplandı</span> : <span className="waitingAnswer">Cevap bekliyor</span>}
+              {data.isAnswered === true ? (
+                <span className="answered">Cevaplandı</span>
+              ) : (
+                <span className="waitingAnswer">Cevap bekliyor</span>
+              )}
             </span>
           </div>
         </div>
@@ -81,31 +94,30 @@ const handleSubmit = async (values) => {
           ""
         )}
       </div>
-     {
-      !data.adminAnswer ? (
-         <div className={style.answerApplication}>
-        <Formik
-          initialValues={{
-            adminAnswer: "",
-            isAnswered: true,
-          }}
-          validationSchema={AdminAnswerValidation}
-          onSubmit={handleSubmit}
-        >
-          <Form>
-            <Field
-              id="adminAnswer"
-              name="adminAnswer"
-              placeholder="Cevabınız"
-            />
-           
-            <button type="submit">Gönder</button>
-          </Form> 
-         
-        </Formik>
-      </div>
-      ): ""
-     }
+      {!data.adminAnswer ? (
+        <div className={style.answerApplication}>
+          <Formik
+            initialValues={{
+              adminAnswer: "",
+              isAnswered: true,
+            }}
+            validationSchema={AdminAnswerValidation}
+            onSubmit={handleSubmit}
+          >
+            <Form>
+              <Field
+                id="adminAnswer"
+                name="adminAnswer"
+                placeholder="Lütfen cevabınızı yazın..."
+              />
+
+              <button type="submit">Gönder</button>
+            </Form>
+          </Formik>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

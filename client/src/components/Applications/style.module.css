@@ -29,8 +29,13 @@
     background-color: #3a5168;
     color: white;
 }
+.applicationTable th i{
+    padding: 5px;
+    
+}
 .loadingScreen{
     color: #3a5168;
+    text-align: center;
 }
 .test td:last-child{
     border-radius:0 0 10px 0;
