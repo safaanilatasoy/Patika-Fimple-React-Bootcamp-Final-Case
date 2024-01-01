@@ -2,8 +2,7 @@ import style from "./style.module.css";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { collection, deleteDoc, doc, getDoc } from "firebase/firestore";
 import { firestoreDB } from "../../firebase";
-import {useNavigate} from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 function Applications() {
@@ -11,7 +10,7 @@ function Applications() {
   const ref = collection(firestoreDB, "applications");
   const [data, isLoading] = useCollectionData(ref);
 
-  const  handleButtonSubmit = (id) => {
+  const handleButtonSubmit = (id) => {
     navigate("/application-details/" + id);
   };
 
@@ -50,11 +49,18 @@ function Applications() {
           {data.map((application, key) => (
             <tr key={key} id={application.id}>
               <td>{application.name}</td>
-              <td>01.01.2024</td>
               <td>
-                {application.isAnswered === true
-                  ? "Cevaplandı"
-                  : "Cevap Bekliyor"}
+                {application.applicationDate &&
+                  new Date(
+                    application.applicationDate.seconds * 1000
+                  ).toLocaleDateString()}
+              </td>
+              <td>
+                {application.isAnswered === true ? (
+                  <span className="answered">Cevaplandı</span>
+                ) : (
+                  <span className="waitingAnswer">Cevap bekliyor</span>
+                )}
               </td>
               <td className={style.buttonContainer}>
                 <button

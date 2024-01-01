@@ -16,4 +16,9 @@ a {
   padding: 20px;
 }
 
-
+.answered{
+color : #27ae60;
+}
+.waitingAnswer{
+color : #c0392b;
+}

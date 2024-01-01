@@ -40,7 +40,7 @@ function ApplicationList({applicationId}) {
           <div className={style.applicationStatusHeader}>
             <span className={style.applicationStatus}>
               <b>Status: </b>
-              {data.isAnswered === true ? "Cevaplandı" : "Cevap Bekliyor"}
+              {data.isAnswered === true ? <span className="answered">Cevaplandı</span> : <span className="waitingAnswer">Cevap bekliyor</span>}
             </span>
           </div>
         </div>

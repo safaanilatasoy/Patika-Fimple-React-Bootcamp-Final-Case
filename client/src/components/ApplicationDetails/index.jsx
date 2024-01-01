@@ -62,7 +62,7 @@ const handleSubmit = async (values) => {
           <div className={style.applicationStatusHeader}>
             <span className={style.applicationStatus}>
               <b>Status: </b>
-              {data.isAnswered === true ? "Cevaplandı" : "Cevap Bekliyor"}
+              {data.isAnswered === true ? <span className="answered">Cevaplandı</span> : <span className="waitingAnswer">Cevap bekliyor</span>}
             </span>
           </div>
         </div>
@@ -81,7 +81,9 @@ const handleSubmit = async (values) => {
           ""
         )}
       </div>
-      <div className={style.answerApplication}>
+     {
+      !data.adminAnswer ? (
+         <div className={style.answerApplication}>
         <Formik
           initialValues={{
             adminAnswer: "",
@@ -102,6 +104,8 @@ const handleSubmit = async (values) => {
          
         </Formik>
       </div>
+      ): ""
+     }
     </div>
   );
 }

@@ -13,20 +13,22 @@ function SendTicketForm() {
 
  const handleSubmit = async (values) => {
     try {
+     
+      const currentDate = new Date();
+      values.applicationDate = currentDate;
+
+      
       const collectionRef = collection(firestoreDB, 'applications');
       const docRef = await addDoc(collectionRef, values);
-
-      console.log("Document written with ID: ", docRef.id);
-
       const updatedDocRef = doc(collectionRef, docRef.id);
       await setDoc(updatedDocRef, { id: docRef.id }, { merge: true });
 
+   
       navigate(`/basvuru-basarili/${docRef.id}`, { state: { applicationId: docRef.id } });
     } catch (error) {
       console.error("Error adding document: ", error);
     }
   };
-
   return (
     <div className={style.sendTicketForm}>
       <h2>Başvuru Oluştur</h2>
